@@ -59,7 +59,7 @@ const generate = () => {
 
   const data = JSON.stringify(result, ` `, 2);
 
-  fs.writeFile(`../../mocks.json`, data, (err) => {
+  fs.writeFile(`mocks.json`, data, (err) => {
     if (err) {
       console.error(err);
       process.exit(1);
