@@ -51,9 +51,7 @@ const generate = () => {
     .map(() => ({
       type: TYPES[getRandomInt(0, 1)],
       title: TITLES[getRandomInt(0, TITLES.length - 1)],
-      description: shuffle(DESCRIPTIONS)
-        .slice(0, getRandomInt(1, DESCRIPTIONS.length - 1))
-        .join(` `),
+      description: shuffle(DESCRIPTIONS).slice(0, getRandomInt(1, 5)).join(` `),
       sum: getRandomInt(SUM.MIN, SUM.MAX),
       picture: `item${getRandomInt(PICTURES.MIN, PICTURES.MAX)}.jpg`,
       category: shuffle(CATEGORIES).slice(0, getRandomInt(1, CATEGORIES.length - 1)),
