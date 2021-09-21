@@ -1,3 +1,11 @@
-"use strict";
+'use strict';
 
-console.log(`Hello, world!`);
+const cli = require(`./cli`);
+
+const flag = process.argv[2];
+
+if (flag === `--help` || !flag) {
+  cli[`--help`].run();
+} else {
+  cli[flag].run();
+}
