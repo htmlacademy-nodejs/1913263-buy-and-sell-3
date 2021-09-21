@@ -1,0 +1,6 @@
+.next
+.husky
+dist
+build
+node_modules
+package.json
